@@ -50,7 +50,7 @@ const ChatInbox = ({ user, socket }) => {
       socket.off('receive', handleIncomingMessage);
       socket.off('chatDeleted', handleChatDeleted);
     };
-  }, [socket, user?._id]);
+  }, [socket, user?._id, fetchInbox]);
 
   useEffect(() => {
     if (preselectedUser) setActiveChat(preselectedUser);

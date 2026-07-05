@@ -118,7 +118,6 @@ const uploadToCloudinary = async (file) => {
 
 export default function JobApplyForm({ job, onApply }) {
   const [responses, setResponses] = useState({});
-  const [selectedFile, setSelectedFile] = useState(null);
   const [previewUrl, setPreviewUrl] = useState('');
   const [uploading, setUploading] = useState(false);
   const [imageUrl, setImageUrl] = useState('');
@@ -127,7 +126,6 @@ export default function JobApplyForm({ job, onApply }) {
     const file = e.target.files[0];
     if (!file) return;
 
-    setSelectedFile(file);
     setPreviewUrl(URL.createObjectURL(file));
     setUploading(true);
     try {
