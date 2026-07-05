@@ -1,0 +1,72 @@
+/* Navbar.css */
+
+.navbar {
+  background: #0073e6;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px 30px;
+  justify-content: space-between;
+  user-select: none;
+  box-shadow: 0 3px 10px rgba(0, 115, 230, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover, .navbar-link.active {
+  color: #a8d8ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* User info section on nav */
+.navbar-user-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #cce6ff;
+}
+
+.navbar-user-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #a8d8ff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 720px) {
+  .navbar-links {
+    gap: 14px;
+    font-size: 0.9rem;
+  }
+  .navbar-user-info {
+    font-size: 0.85rem;
+  }
+}

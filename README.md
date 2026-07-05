@@ -354,5 +354,8 @@ This project is licensed under the ISC License - see the LICENSE file for detail
 - Ensure resume format is supported (PDF, TXT, DOC)
 
 ---
-
+# Author 
+Anoop Tripathi
+B.Tech Aritificial Intelligence and Data Science
+IIT Patna
 **Happy Job Hunting! **

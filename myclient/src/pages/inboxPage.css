@@ -1,0 +1,80 @@
+/* Container for the inbox page */
+.index-container {
+  max-width: 520px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 115, 230, 0.12);
+  padding: 26px;
+}
+
+/* Page heading */
+.index-heading {
+  font-weight: 800;
+  margin-bottom: 18px;
+  font-size: 1.8rem;
+  color: #0073e6;
+  text-align: center;
+}
+
+/* Chat list styling */
+.chat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual chat item */
+.chat-item {
+  margin-bottom: 16px;
+}
+
+/* Chat card (clickable) */
+.chat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f6fbff;
+  border-radius: 8px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.chat-card:hover {
+  background: #e3f0ff;
+}
+
+/* Chat user name */
+.chat-user {
+  font-weight: bold;
+  color: #0073e6;
+  flex: 1;
+}
+
+/* Last message preview */
+.chat-last-message {
+  color: #4c6072;
+  font-style: italic;
+}
+
+/* Back button above chatbox */
+.back-button {
+  background: none;
+  border: none;
+  color: #0073e6;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+/* ChatBox wrapper for center alignment */
+.chatbox-wrapper {
+  display: flex;
+  justify-content: center;
+}
